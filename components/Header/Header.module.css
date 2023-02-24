@@ -1,0 +1,56 @@
+.navbar{
+  background-color:#8c52ff;
+}
+
+.nav-list {
+  margin: auto;
+  list-style: none;
+  display: flex;
+}
+
+.nav-list a {
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+  margin-left: 35px;
+  position: relative;
+} 
+
+.nav-list a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f7f7f7;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+} 
+
+.nav-list a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.logo {
+  color: #f7f7f7;
+}
+
+.logo:hover {
+  color: #f7f7f7;
+} 
+
+.btn-login {
+  background-color: #ffffff;
+  border: none;
+  color: #8c52ff;
+  border-radius: 12px;
+}
+
+.btn-login:hover {
+  background-color: rgb(127, 0, 247);
+  border: 1px solid #f7f7f7;
+} 

@@ -1,0 +1,42 @@
+.atividade-section {
+  margin-top: 180px;
+}
+
+.imgAtividade img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.imgAtividade img {
+  border-radius: 10px;
+}
+
+.atividade-detalhes {
+  line-height: 2rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.icon-atividade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-atividade span {
+  margin-left: 20px;
+}
+.imgcw {
+  width: 240px;
+  height: 200px;
+}
+.alink{
+    text-decoration: none;
+    color: blueviolet;
+}
+.alink:hover{
+    color: black;
+}

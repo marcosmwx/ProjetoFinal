@@ -1,0 +1,73 @@
+.main_footer {
+  color: aliceblue;
+  background-color: #8c52ff;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+
+  
+.p_footer{
+    text-align: center;
+
+}
+.list_footer li{
+    list-style: none;
+}
+
+
+.list_footer hr{
+    border-bottom: 1px solid #cb6ce6;
+} 
+
+.form form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #cb6ce6;
+    margin-bottom: 50px;
+}
+
+.form form i{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.form form input{
+    width: 80%;
+   border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline: none;
+}
+
+.form form button{
+    background: transparent;
+    border:0 ;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .ri-arrow-right-line{
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.social_icons i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    color: aliceblue;
+    margin-right: 15px;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+.ctt_footer{
+    font-size: 20px;
+    color: aliceblue;
+}

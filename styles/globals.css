@@ -1,0 +1,22 @@
+body{
+    padding-top: 60px;
+}
+
+
+/* Define as cores iniciais da barra de rolagem */
+:root {
+  --scrollbar-color: #8C52FF;
+}
+
+/* Define a aparência da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+/* Define a aparência do indicador da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: 5px;
+}
+

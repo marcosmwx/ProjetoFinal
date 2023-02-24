@@ -1,0 +1,33 @@
+{
+  "name": "tryint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.10",
+    "@mui/styled-engine-sc": "^5.11.9",
+    "bootstrap": "^5.2.3",
+    "express": "^4.18.2",
+    "flatpickr": "^4.6.13",
+    "mysql": "^2.18.1",
+    "next": "^13.1.6",
+    "nextjs-cors": "^2.1.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "remixicon": "^2.5.0",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.1"
+  }
+}
