@@ -4,10 +4,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "remixicon/fonts/remixicon.css";
-import styles from "./Header.module.css"
-
-
-import BtnLogin from "../LoginButton/loginbutton.jsx";
+import styles from "./Header.module.css";
+import BtnLogin from "../LoginButton/Loginbutton";
 
 //       MENU      // 
 function Header() {
