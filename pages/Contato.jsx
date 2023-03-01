@@ -3,12 +3,11 @@ import Header from "../components/Header/Header";
 import styles from "../styles/Contato.module.css";
 
 export default function Contato() {
-    
   return (
     <div>
       <Header />
       <div className={styles.container}>
-        <h1 className={styles.title}>Contato</h1>
+        <h1 className={styles.title}>Fale conosco</h1>
         <div className={styles.contact}>
           <div className={styles.info}>
             <h2>Entre em contato:</h2>
@@ -20,7 +19,7 @@ export default function Contato() {
             </p>
           </div>
           <div className={styles.photo}>
-            <video autoPlay muted loop playsInline width="340" height="360" controls>
+            <video autoPlay muted loop playsInline width="340" height="360">
               <source src="/images/Conect.mp4" type="video/mp4" />
             </video>
           </div>

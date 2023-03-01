@@ -6,6 +6,7 @@ import "remixicon/fonts/remixicon.css";
 function Footer() {
   return (
     <div className={styles.main_footer}>
+    
       <Container>
         <Row>
           <Col>
@@ -47,14 +48,18 @@ function Footer() {
 
           <Col>
             <div className="noticias-footer">
-              <h4> Se inscreva para receber noticias</h4>
-              <form action="#" className={styles.form}>
+              <h4> Duvidas, Sugestões e Elogios </h4>
+              <form action="#" className={styles.form}> 
+              
                 <input type="email" placeholder="Digite seu e-mail" required />
-                <button type="submit">
-                  {" "}
-                  <i className="ri-arrow-right-line"></i>
-                </button>
+                <button className={styles.btn_form} type="submit">
+            
+                <i className="ri-arrow-right-line"></i>
+              </button>
+                <textarea className={styles.text_area}  name="postContent" rows={2} cols={26} >  </textarea>
+            
               </form>
+
               <div className={styles.social_icons}>
                 <i class="ri-facebook-circle-fill"></i>
                 <i class="ri-github-fill"></i>
@@ -73,6 +78,8 @@ function Footer() {
           </div>
         </Row>
       </Container>
+     
+      
     </div>
   );
 }

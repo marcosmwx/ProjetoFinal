@@ -1,26 +1,30 @@
 .main_footer {
-  color: aliceblue;
-  background-color: #8c52ff;
-  padding-top: 3rem;
-  width: 100%;
+    color: aliceblue;
+    background-color: #35009e;
+    ;
+    padding-top: 3rem;
+    width: 100%;
+    font-family: 'Mulish', sans-serif;
 }
 
 
-  
-.p_footer{
+
+.p_footer {
     text-align: center;
 
+
 }
-.list_footer li{
+
+.list_footer li {
     list-style: none;
 }
 
 
-.list_footer hr{
+.list_footer hr {
     border-bottom: 1px solid #cb6ce6;
-} 
+}
 
-.form form{
+.form form {
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -29,32 +33,34 @@
     margin-bottom: 50px;
 }
 
-.form form i{
+.form i {
     font-size: 18px;
-    margin-right: 10px;
 }
 
-.form form input{
-    width: 80%;
-   border-radius: 5px;
-    color: rgb(255, 255, 255);
+.form input {
+    width: 70%;
+    height: 33.2px;
+    border-radius: 4px;
     border: 0;
     outline: none;
+
 }
 
-.form form button{
-    background: transparent;
-    border:0 ;
-    outline: none;
-    cursor: pointer;
+
+.btn_form {
+    font-size: 18px;
+
+    width: 45px;
+    color: #000000;
+
+    background-color: #ffffff;
+    margin-left: -28px;
+    border-radius: 10%;
+
 }
 
-form button .ri-arrow-right-line{
-    font-size: 20px;
-    color: aliceblue;
-}
 
-.social_icons i{
+.social_icons i {
     width: 40px;
     height: 40px;
     text-align: center;
@@ -64,10 +70,19 @@ form button .ri-arrow-right-line{
     margin-right: 15px;
     cursor: pointer;
     align-items: center;
+
 }
 
 
-.ctt_footer{
+.ctt_footer {
     font-size: 20px;
     color: aliceblue;
+}
+
+.text_area {
+    resize: none;
+    margin-top: 2px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
 }

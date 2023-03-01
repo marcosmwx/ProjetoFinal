@@ -44,17 +44,28 @@ export default function BtnLogin() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+
     console.log({
       email: data.get("email"),
       password: data.get("password"),
     });
+
+    const email = data.get("email");
+    const password = data.get("password");
+
+    if (email === "willianmw@hotmail.com" && password === "123456") {
+      console.log("Login correto!");
+      window.location.assign("http://localhost:8005/UserProfile");
+    } else {
+      console.log("Login incorreto!");
+    }
   };
   const theme = createTheme();
   const stylesx = {
     button: {
       backgroundColor: "white",
-      borderColor: "#AA00FF",
-      color: "#AA00FF",
+      borderColor: "#35009e",
+      color: "#35009e",
       "&:hover": {
         color: "white",
         borderColor: "white",
@@ -62,17 +73,17 @@ export default function BtnLogin() {
     },
     textField: {
       "& label.Mui-focused": {
-        color: "#AA00FF",
+        color: "#35009e",
       },
       "& .MuiInput-underline:after": {
-        borderBottomColor: "#AA00FF",
+        borderBottomColor: "#35009e",
       },
     },
     submitButton: {
-      backgroundColor: "#AA00FF",
+      backgroundColor: "#35009e",
       color: "white",
       "&:hover": {
-        backgroundColor: "#6A0080",
+        backgroundColor: "#35009e",
       },
     },
   };

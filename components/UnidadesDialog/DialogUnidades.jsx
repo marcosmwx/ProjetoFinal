@@ -12,6 +12,7 @@ export default function FormDialog(props) {
   // State que define valores do input para edição de valores
   const [editValues, setEditValues] = useState({
     id: props.id,
+    nome: props.nome,
     capacidade: props.capacidade,
     cep: props.cep,
     rua: props.rua,

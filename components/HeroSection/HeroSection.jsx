@@ -34,6 +34,8 @@ function HeroSection() {
           <Col lg="6" md="6" className={styles.foto}>
             {/* conteúdo da coluna aqui */}
           </Col>
+
+          
         </Row>
       </Container>
     </section>

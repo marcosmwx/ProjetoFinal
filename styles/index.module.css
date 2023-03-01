@@ -7,7 +7,9 @@
     padding-top: 70px;
   }
   /*--fim config container--*/
-  
+  .total{
+    background-color: #35009e;
+  }
   /*--config title--*/
   h1.title{
     font-size: 3rem;
@@ -49,4 +51,6 @@
     text-decoration: underline;
   }
   /*--fim config link--*/
-  
+  .hr{
+    color: #fff;
+  }

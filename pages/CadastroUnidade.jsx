@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import TabUnidade from "../components/CadUnidade/TabUnidade";
 import FormCadUnidade from "../components/CadUnidade/FormCadUnidade";
 import Card from "../components/CardInfoUnidades/CardUnidades";
+
+import HeaderAdmin from "../components/Header/HeaderAdmin";
 
 export default function CadastroUnidade() {
   const [listSubject, setListSubject] = useState();
@@ -14,6 +15,8 @@ export default function CadastroUnidade() {
   }, []);
   return (
     <div>
+    
+    <HeaderAdmin/>
       <FormCadUnidade />
       {typeof listSubject !== "undefined" &&
         listSubject.map((value) => {
@@ -35,7 +38,7 @@ export default function CadastroUnidade() {
             />
           );
         })}
-      <TabUnidade />
+        
     </div>
   );
 }

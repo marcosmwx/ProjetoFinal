@@ -1,16 +1,15 @@
 .button {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .purple {
-    background-color: rgb(127, 0, 247);
-    color: white;
-  }
-  
-  .purple:hover {
-    background-color: #8000c1;
-    color: rgb(255, 255, 255);
-  }
-  
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.purple {
+  background-color: #35009e;
+  color: white;
+}
+
+.purple:hover {
+  background-color: #280177;
+  color: rgb(255, 255, 255);
+}

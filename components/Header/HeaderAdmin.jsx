@@ -5,12 +5,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "remixicon/fonts/remixicon.css";
 import styles from "./Header.module.css"
+import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
 
-
-import BtnLogin from "../LoginButton/loginbutton";
-
-//       MENU      // 
-function Header() {
+// MENU PAGINA ADMINISTRADOR //
+function HeaderAdmin() {
   return (
     <header className="header">
       <Navbar collapseOnSelect expand="lg" variant="dark" fixed="top" className={styles.navbar}>
@@ -25,20 +23,15 @@ function Header() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className={`${styles["nav-list"]} me-auto`}>
-            <Nav.Link href="/">Inicio</Nav.Link>
-              <Nav.Link href="/Unidades">Unidades</Nav.Link>
-              <Nav.Link href="/Contato">Contatos</Nav.Link>
-        
             </Nav>
             <Nav>
-              <BtnLogin/>
+            <Nav.Link href="/" className={styles.btn_sairAdmin}>Sair <LogoutSharpIcon/></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
     </header>
   );
 }
 
-export default Header;
+export default HeaderAdmin;

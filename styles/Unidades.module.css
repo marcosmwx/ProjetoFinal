@@ -1,117 +1,66 @@
 .container {
-  min-height: 100vh;
+
   padding: 0 0.5rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #000000;
+  margin-bottom: 135px;
 }
 
 .main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
-.select {
-  margin: 0 1rem;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-}
-
-.card {
+.undCards {
   margin: 1rem;
-  flex-basis: 45%;
+  flex-basis: 80%;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.cardb {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-}
-
-.imgs img {
-  width: 350px;
-  height: 250px;
-  border-radius: 8%;
-}
-.catributes h2{
-  font-size: 100px;
-}
 .title {
-  font-weight: 600;
-  font-size: 50px;
-  font-family: 'Mulish', sans-serif;
-  color: #8c52ff;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0077B6;
   text-transform: uppercase;
+  text-shadow: 1px 1px #E6E6E6;
 }
 
-.filters {
-  margin: 2rem;
+.undCards:hover,
+.undCards:focus,
+.undCards:active {
+  color: #35009e;
+  border-color: #35009e;
 }
 
-.spaceu {
-  margin-left: 3rem;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
+.undCards h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }
 
-.card p {
+.undCards p {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #0070f3;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.undCards {
+  margin: auto;
+  margin-bottom: 15px;
 }

@@ -1,16 +1,20 @@
 import React from "react";
-
+import style from "../../styles/CadUnidade.module.css";
 import FormDialog from "../UnidadesDialog/DialogUnidades";
+import { Button } from '@mui/material';
+
 export default function Card(props) {
-  // Função para definir status de abertura do card e condiçao state do card como false para inicar o menu fechado
   const [open, setOpen] = React.useState(false);
+
   const handleClickCard = () => {
     setOpen(true);
   };
 
+
   return (
-    <>
-    
+
+    <div>
+
       <FormDialog
         open={open}
         setOpen={setOpen}
@@ -25,22 +29,28 @@ export default function Card(props) {
         telefone={props.telefone}
         email={props.email}
       />
-      
+
+
       <div
-        className="card--container"
-        onClick={() => {
-          handleClickCard();
-        }}
+        className={style.table_row}
+
       >
-        <h2 className="card--nome">{`${props.nome}`}</h2>
-        <p className="card--email">{`Email: ${props.email}`}</p>
-        <p className="card-telefone">{`Telefone: ${props.telefone}`}</p>
-        <p className="card-telefone">{`Telefone: ${props.cep}`}</p>
-        <p className="card-telefone">{`Telefone: ${props.rua}`}</p>
-        <p className="card-telefone">{`Telefone: ${props.bairro}`}</p>
-        <p className="card-telefone">{`Telefone: ${props.cidade}`}</p>
-        <p className="card-descicao">{`Descrição: ${props.descricao}`}</p>
+        <div className={style.table_id}>{props.id}</div>
+        <div className={style.table_name}>{props.nome}</div>
+        <div className={style.table_email}>{props.email}</div>
+        <div className={style.table_tel}>{props.telefone}</div>
+        <div className={style.table_cep}>{props.cep}</div>
+        <div className={style.table_rua}>{props.rua}</div>
+        <div className={style.table_bairro}>{props.bairro}</div>
+        <div className={style.table_cidade}>{props.cidade}</div>
+        <div className={style.table_descricao}>{props.descricao}</div>
+        <div>
+          <Button className={style.btnAdmin} onClick={() => {
+            handleClickCard();
+          }}>Editar</Button>
+        </div>
+
       </div>
-    </>
-  );
-}
+      </div>
+      );
+}  

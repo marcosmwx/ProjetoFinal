@@ -1,122 +1,79 @@
+import React, { useState, useEffect } from "react";
 import styles from "./Activity.module.css";
-import { Container, Row, Col } from "react-bootstrap";
-import React from "react";
 
-export default function Activity() {
+const Activity = () => {
+  const [carouselIndex, setCarouselIndex] = useState(0);
+  const images = [
+    "https://i.pinimg.com/564x/16/dc/33/16dc334a7c63a0eeff761766056c90d9.jpg",
+    "https://i.pinimg.com/564x/c6/0e/c5/c60ec51903ebe27e09eba0d6ad7ac643.jpg",
+    "https://i.pinimg.com/564x/01/db/66/01db66b7ea370379abee4634a73b7f53.jpg",
+    "https://i.pinimg.com/564x/35/43/56/354356700a96c616742dd67df5e17faf.jpg",
+    "https://i.pinimg.com/564x/67/0d/4f/670d4fe8d4989c433c20e4a45331b65a.jpg",
+    "https://i.pinimg.com/564x/1b/98/64/1b9864aba028597765698694161143fd.jpg",
+    "https://i.pinimg.com/564x/cf/6b/fb/cf6bfbb271acbc330ba888dabf090f37.jpg",
+  ];
+
+  const handleClick = (index) => {
+    setCarouselIndex(index);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCarouselIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
-    <section className={styles.atividade_section}>
-      <Container>
-        <Row>
-          <Col lg="12" className="text-center mb-5">
-            <h2>A localização certa pode ser crucial para o seu sucesso</h2>
-          </Col>
-
-          <Col lg="3">
-            <div className={styles.box_atividade}>
-              <div className="imgAtividade  mb-4">
-                <a href="#agende" target="_blank" rel="noreferrer">
-                  <img className={styles.imgcw}
-                    src="https://images.adsttc.com/media/images/55e4/d384/e58e/ceb7/f100/0151/newsletter/054.jpg?1441059704"
-                    alt="example"
-                  />
-                </a>
-              </div>
-              <div className="atividade-detalhes mt-2">
-                <a href="#agende" className={styles.alink}>
-                  <h6>Programador Full Stack - Palestra</h6>
-                </a>
-
-                <div className="icon-atividade d-flex ">
-                  <span className="d-flex ">
-                    <i class="ri-user-line"></i> 1k
-                  </span>
-                  <span className="d-flex ">
-                    <i class="ri-star-fill"></i>1.7k
-                  </span>
-                </div>
-              </div>
+    <div className={styles.container}>
+      
+      <div className={styles.carousel}>
+        <div
+          className={styles.carouselSlide}
+          style={{
+            transform: `translateX(-${carouselIndex * (100 / images.length)}%)`,
+          }}
+        >
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={styles.carouselItem}
+              onClick={() => handleClick(index)}
+              style={{
+                display: "block",
+              }}
+            >
+              <img src={image} alt={`Slide ${index + 1}`} />
             </div>
-          </Col>
-          <Col lg="3">
-            <div className={styles.box_atividade}>
-              <div className="imgAtividade  mb-4">
-                <a href="#agende" target="_blank" rel="noreferrer">
-                  <img className={styles.imgcw}
-                    src="https://oasislab.com.br/wp-content/uploads/2017/08/10-espa%C3%A7os-de-coworking-inusitados-OasisLab.jpg"
-                    alt="example"
-                  />
-                </a>
-              </div>
-              <div className="atividade-detalhes mt-2">
-                <a href="#agende" className={styles.alink}>
-                  <h6>Programador Full Stack - Palestra</h6>
-                </a>
+          ))}
+        </div>
 
-                <div className="icon-atividade d-flex ">
-                  <span className="d-flex ">
-                    <i class="ri-user-line"></i> 2k
-                  </span>
-                  <span className="d-flex ">
-                    <i class="ri-star-fill"></i>1.9k
-                  </span>
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col lg="3">
-            <div className={styles.box_atividade}>
-              <div className="imgAtividade  mb-4">
-                <a href="#agende" target="_blank" rel="noreferrer">
-                  <img className={styles.imgcw}
-                    src="https://infrafm.dditanio.com/arquivos/coworking_infrafm_5SVWGU.jpg"
-                    alt="example"
-                  />
-                </a>
-              </div>
-              <div className="atividade-detalhes mt-2">
-                <a href="#agende" className={styles.alink}>
-                  <h6>Programador Full Stack - Palestra</h6>
-                </a>
-
-                <div className="icon-atividade d-flex ">
-                  <span className="d-flex ">
-                    <i class="ri-user-line"></i> 1k
-                  </span>
-                  <span className="d-flex ">
-                    <i class="ri-star-fill"></i>1.7k
-                  </span>
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col lg="3">
-            <div className={styles.box_atividade}>
-              <div className="imgAtividade  mb-4">
-                <a href="#agende" target="_blank" rel="noreferrer">
-                  <img className={styles.imgcw}
-                    src="https://escala.app/wp-content/uploads/2022/11/espaco-de-trabalho-1-1.png"
-                    alt="example"
-                  />
-                </a>
-              </div>
-              <div className="atividade-detalhes mt-2">
-                <a href="#agende" className={styles.alink}>
-                  <h6>Programador Full Stack - Palestra</h6>
-                </a>
-
-                <div className="icon-atividade d-flex ">
-                  <span className="d-flex ">
-                    <i class="ri-user-line"></i> 1k
-                  </span>
-                  <span className="d-flex ">
-                    <i class="ri-star-fill"></i>1.7k
-                  </span>
-                </div>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+        <div className={styles.carouselIndicators}>
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`${styles.carouselIndicator} ${
+                index === carouselIndex ? styles.active : ""
+              }`}
+              onClick={() => handleClick(index)}
+            />
+          ))}
+        </div>
+      </div>
+      <div className={styles.text}>
+        <p>
+          A localização certa pode <br/> 
+          ser crucial para o seu sucesso
+        </p>
+        <h6>Espaços de coworking para estudantes, para que eles tenham acesso a um ambiente de estudo
+                adequado e também possam ter contato com empresas que podem oferecer oportunidades de estágio ou emprego. <br />
+                Nosso objetivo é ter pelo menos um coworking em cada bairro,
+                para que nenhum estudante precise se deslocar muito longe para encontrar um local de estudo adequado.</h6>
+      </div>
+    </div>
   );
-}
+};
+
+export default Activity;

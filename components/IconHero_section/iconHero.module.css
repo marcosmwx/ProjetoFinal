@@ -1,0 +1,12 @@
+ .company_icon{
+color: rgb(236, 236, 236);
+display: flex;
+justify-content: center;
+
+} 
+
+.company_section{
+background-color:#35009e;
+margin-top: 50px;
+padding: 15px;
+}

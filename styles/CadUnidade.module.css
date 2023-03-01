@@ -1,0 +1,136 @@
+
+
+
+.texto_unidadeAdmin {
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+  
+}
+
+.formAdmin {
+    border: 1px solid #35009e;
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: -70px;   
+}
+
+
+.button_admin{
+    margin: 25px;   
+}
+
+
+.table_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  rgba(230, 216, 243, 0.493);
+  border: 1px solid #faf8fc;
+  padding: 10px;
+}
+.table_row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.884);;
+  border: 2px solid #fffcfc;
+  padding: 10px;
+  color: #faf8fc;
+  text-transform: uppercase;
+}
+
+.table_row2 p{
+  font-weight: bold;
+  font-size: 20px; 
+}
+
+
+
+.table_cell {
+width: 5%;
+padding: 5px 10px;
+text-align: center;
+ 
+}
+.table_id {
+   width: 5%;
+  padding: 10px;
+  text-align: left;
+
+}
+.table_name{
+  text-align: left;
+  width: 10%;
+}
+.table_email{
+  text-align: left;
+  width: 15%;
+}
+.table_tel{
+  text-align: left;
+  width: 10%;
+}
+.table_cep{
+  text-align: left;
+  width: 10%;
+}
+.table_rua{
+  text-align: left;
+  width: 10%;
+}
+.table_bairro{
+  text-align: left;
+  width: 10%;
+}
+.table_cidade{
+  text-align: left;
+  width: 10%;
+}
+.table_descricao{
+  text-align: left;
+  width: 10%;
+}
+
+.table{
+    margin: 5px;
+}
+
+.div_name{
+margin-bottom: 20px;
+}
+
+.cabecalho{
+  display: flex;
+  text-align: center;
+ 
+}
+
+.texto{
+ padding: 25px;
+ margin: auto 100px;
+ font-size:25px;
+ font-family: 'Mulish', sans-serif;
+ text-transform: uppercase;
+}
+
+
+
+.footerAdmin{
+position: relative;
+margin-top: 50px;
+}
+
+
+.btnAdmin{
+  background-color: #35009e;
+  color: #faf8fc;
+}
+
+.btnAdmin:hover{
+  background-color: #35009ebb;
+}
+

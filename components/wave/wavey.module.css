@@ -1,0 +1,9 @@
+.wave{
+    background-image: url('../../public/images/waves.png');
+    background-repeat: no-repeat;
+   width:100%;
+   height: 160px;
+   background-color: #35009e;
+   transform: rotate(180deg);
+
+}

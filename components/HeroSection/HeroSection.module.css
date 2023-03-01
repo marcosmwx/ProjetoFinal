@@ -1,34 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
+/* CONFIGURAÇÃO TEXTO SEÇÃO PRINCIPAL */
 
 .hero__content{
     padding-top:80px ;
     
 }
-.hero__content p{
+.paragraph{
     font-size: 20px;
     text-align: justify;
     font-family: 'Mulish', sans-serif;
 }
 
-.hero__content h2 {
+.heading{
    margin-top: 100px;
     font-weight: 600;
-    font-size: 50px;
-    font-family: 'Mulish', sans-serif;
-    color: #8c52ff;
-    text-transform: uppercase;
+    font-size: 80px;
+   /*  font-family: 'Mulish', sans-serif; */
+    color: #35009e;
+    font-family: 'Cookie', cursive;
+    letter-spacing: 4px;
+    
 }
 
-.btn-home{
-    border-radius: 20px;
-    border: none;
-    color: aliceblue;
-    background-color: #8c52ff;
-    width: 160px;
-    height: 55px;
-    font-size: 20px;
-}
-
+/* CONFIGURAÇÃO FOTO PRINCIPAL HERO SECTION  */
 .foto{
     background-image: url('/images/FotoHome1.png');
   background-repeat: no-repeat;
@@ -36,4 +31,3 @@
 }
 
   
-/* #cb6ce6 */

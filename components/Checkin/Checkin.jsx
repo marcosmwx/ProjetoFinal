@@ -1,7 +1,5 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
-import styles from "../styles/Checkin.module.css";
+import styles from './Checkin.module.css'
 const companies = [
   {
     name: "Company A",
@@ -41,7 +39,7 @@ class CheckinSystem extends React.Component {
       (company) => company.name === event.target.value
     );
 
-    // find the first available day from today
+
     const today = new Date();
     today.setHours(0, 0, 0, 0);
     const days = Object.keys(selectedCompany.schedule);
@@ -82,7 +80,7 @@ class CheckinSystem extends React.Component {
           selectedDay
         ).toLocaleDateString()} as ${selectedTime}`
       );
-      // You can add your logic here to send the check-in data to your backend or database
+     
     } else {
       console.log("Por favor selecione a empresa, dia e horario");
     }
@@ -93,11 +91,10 @@ class CheckinSystem extends React.Component {
     const days = selectedCompany ? selectedCompany.schedule : {};
     return (
       <div>
-        <Header />
         <form onSubmit={this.handleSubmit} className={styles.total}>
-          <label>
-            Empresa:
-            <select
+          <label  className={styles.label_check}>
+          <p className={styles.label_p}> Empresa</p>
+            <select className={styles.selectCheck}
               value={selectedCompany ? selectedCompany.name : ""}
               onChange={this.handleCompanySelect}
             >
@@ -110,9 +107,9 @@ class CheckinSystem extends React.Component {
             </select>
           </label>
           <br />
-          <label>
-            Dia:
-            <select
+          <label className={styles.label_check}>
+          <p className={styles.label_p}> Data</p>
+            <select className={styles.selectCheck}
               value={selectedDay ? selectedDay : ""}
               onChange={this.handleDaySelect}
               disabled={!selectedCompany}
@@ -126,9 +123,9 @@ class CheckinSystem extends React.Component {
             </select>
           </label>
           <br />
-          <label>
-            Horario:
-            <select
+          <label className={styles.label_check}>
+           <p className={styles.label_p}> Horário</p>
+            <select className={styles.selectCheck}
               value={selectedTime ? selectedTime : ""}
               onChange={this.handleTimeSelect}
               disabled={!selectedDay}
@@ -143,9 +140,8 @@ class CheckinSystem extends React.Component {
             </select>
           </label>
           <br />
-          <button type="submit">Confirmar</button>
+          <button type="submit" className={styles.btnCheck}>Confirmar</button>
         </form>
-        <Footer />
       </div>
     );
   }

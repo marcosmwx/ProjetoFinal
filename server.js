@@ -286,11 +286,7 @@ app.prepare().then(() => {
     return app.render(req, res, "/UserProfile");
   });
 
-  server.get("/checkin", (req, res) => {
-    return app.render(req, res, "/Checkin");
-  });
-
-  server.get("/contato", (req, res) => {
+  server.get("/contatos", (req, res) => {
     return app.render(req, res, "/Contato");
   });
   server.get("/unidades", (req, res) => {
