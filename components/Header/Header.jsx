@@ -7,7 +7,7 @@ import "remixicon/fonts/remixicon.css";
 import styles from "./Header.module.css"
 
 
-import BtnLogin from "../LoginButton/loginbutton";
+import BtnLogin from "../LoginButton/loginbutton.jsx";
 
 //       MENU      // 
 function Header() {
