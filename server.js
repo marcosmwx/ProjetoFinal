@@ -311,6 +311,23 @@ app.prepare().then(() => {
     return handle(req, res);
   });
 
+  app.post("/login", (req, res)=>{
+    const email = req.body.email;
+    const senha = req.body.senha;
+    connection.query("SELEC * FROM login WHERE email = ? AND senha = ?", 
+    [email, senha],
+    (err, result9)=>{
+      if (err){
+        req.sed(err);
+      }if(result9.length > 0){
+        res.send({msg: 'Logado com sucesso'})
+      }else{
+        res.sed({msg:'conta não encontrada'})
+      }
+      
+    });
+  });
+
   server.listen(8005, (err) => {
     if (err) throw err;
     console.log("> Ready on http://localhost:8005");
