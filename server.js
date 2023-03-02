@@ -300,6 +300,12 @@ app.prepare().then(() => {
   server.get("/cadastroUnidade", (req, res) => {
     return app.render(req, res, "/CadastroUnidade");
   });
+  server.get("/data", (req, res) => {
+    return app.render(req, res, "/UserData");
+  });
+  server.get("/home", (req, res) => {
+    return app.render(req, res, "/HomeUser");
+  });
 
   server.get("*", (req, res) => {
     return handle(req, res);

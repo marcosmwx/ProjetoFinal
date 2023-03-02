@@ -1,6 +1,8 @@
+import Button from 'react-bootstrap/Button';
 import React from "react";
-
+import styles from "../../styles/Profile.module.css"
 import FormDialog from "../ProfileDialog/DialogProfile";
+
 export default function CardProfile(props) {
   // Função para definir status de abertura do card e condiçao state do card como false para inicar o menu fechado
   const [open, setOpen] = React.useState(false);
@@ -29,21 +31,36 @@ export default function CardProfile(props) {
       />
 
       <div
-        className="card--container"
-        onClick={() => {
-          handleClickCard();
-        }}
+        className={styles.card_container}
+       
       >
-        <h2 className="card--nome">{`${props.nome} ${props.sobrenome}`}</h2>
-        <p className="card--email">{`Email: ${props.email}`}</p>
-        <p className="card-cpf">{`CPF: ${props.cpf}`}</p>
-        <p className="card-telefone">{`Telefone: ${props.telefone}`}</p>
-        <p className="card-cep">{`cep: ${props.cep}`}</p>
-        <p className="card-rua">{`Rua: ${props.rua}`}</p>{" "}
-        <p className="card-bairro">{`Bairro: ${props.bairro}`}</p>
-        <p className="card-cidade">{`Cidade: ${props.cidade}`}</p>
-        <p className="card-complemento">{`Bairro: ${props.complemento}`}</p>
+        <h2 className={styles.card_titulo}>Dados Pessoais</h2>
+      
+        <p className={styles.card_atributos}><strong>Nome: </strong>{`${props.nome} ${props.sobrenome}`}</p>
+        <p className={styles.card_atributos}><strong>CPF:</strong>{` ${props.cpf}`}</p>
+        <p className={styles.card_atributos}><strong>Telefone:</strong>{` ${props.telefone}`}</p>
+        <p className={styles.card_atributos}><strong>cep: </strong>{`${props.cep}`}</p>
+        <p className={styles.card_atributos}><strong>Endereço:</strong>{` ${props.rua}, ${props.bairro} ,${props.cidade},  ${props.complemento}`}</p>{" "}
+      
+        <Button className={styles.buttonEd} onClick={() => {
+          handleClickCard();
+        }}>Editar</Button>
       </div>
+      <div>
+      <ul className={styles.background}>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+   
     </>
   );
 }

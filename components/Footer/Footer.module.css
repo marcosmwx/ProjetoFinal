@@ -86,3 +86,12 @@
     border-radius: 5px;
     outline: none;
 }
+
+.user_footer{
+background-color: #000000;
+color: #f7f7f7;
+margin-top: 200px;
+position: absolute;
+bottom: 0;
+width: 100%;
+}

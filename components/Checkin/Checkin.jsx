@@ -2,7 +2,7 @@ import React from "react";
 import styles from './Checkin.module.css'
 const companies = [
   {
-    name: "Company A",
+    name: "Escola Estadual",
     schedule: {
       "2023-02-23": ["10:00", "11:00", "14:00"],
       "2023-02-24": ["09:00", "13:00", "16:00"],
@@ -14,7 +14,7 @@ const companies = [
     },
   },
   {
-    name: "Company B",
+    name: "Escola Municipal",
     schedule: {
       "2023-02-23": ["09:00", "11:00", "14:00"],
       "2023-02-24": ["10:00", "13:00", "16:00"],
@@ -93,12 +93,12 @@ class CheckinSystem extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit} className={styles.total}>
           <label  className={styles.label_check}>
-          <p className={styles.label_p}> Empresa</p>
+          <p className={styles.label_p}> Unidade</p>
             <select className={styles.selectCheck}
               value={selectedCompany ? selectedCompany.name : ""}
               onChange={this.handleCompanySelect}
             >
-              <option value="">Selecione a Empresa</option>
+              <option value="">Selecione a Unidade</option>
               {companies.map((company) => (
                 <option key={company.name} value={company.name}>
                   {company.name}
@@ -142,6 +142,21 @@ class CheckinSystem extends React.Component {
           <br />
           <button type="submit" className={styles.btnCheck}>Confirmar</button>
         </form>
+        <div>
+        <ul className={styles.background}>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
       </div>
     );
   }
