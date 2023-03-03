@@ -1,11 +1,5 @@
 # ProjetoFinal
 
-Projeto Final do Bootcamp Prograadores Cariocas Parceria do Seca com a Resilia Educação.
-
-
-#############################
-
-ProjetoFinal
 Descrição do projeto // Description of Project
 Projeto Final do Bootcamp Prograadores Cariocas Parceria do Seca com a Resilia Educação, onde criamos uma Plataforma de Co Works, visando a democratização e o acesso a espaços de trabalhos com insfraestruturas que permitam, os usuários realizarem atividades como trabalhos, estudos e Reuniões, também possibilitando que ocorram networkings, pois sabemos que a estar no lugar certo na hora certa é algo de suma importância nos negócios.
 
