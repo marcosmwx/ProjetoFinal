@@ -17,4 +17,5 @@ Pagina inicial com uma breve demonstração.
 
 
 Nossa Equipe
-[CCW_equipe.pdf](https://github.com/marcosmwx/ProjetoFinal/files/10884146/CCW_equipe.pdf)
+
+![CCW_equipe_-](https://user-images.githubusercontent.com/81950828/222776376-a61c6e4e-062b-46d4-b967-8350ff2e004e.png)
